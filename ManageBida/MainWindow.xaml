@@ -1,0 +1,47 @@
+﻿<Window x:Class="ManageBida.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ManageBida"
+        mc:Ignorable="d"
+        Loaded="Window_Loaded"
+        Title="Manager Bida" Height="700" Width="1300"
+        WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <!-- Header -->
+        <Grid Background="#007ACC" Grid.Row="0" Margin="0,0,0,653">
+            <ComboBox Name="Hệ_Thống" HorizontalAlignment="Left" Margin="10" VerticalAlignment="Top" Width="120" Text="Hệ Thống">
+                <ComboBoxItem Content="Đổi mật khẩu" />
+                <ComboBoxItem Content="Đăng xuất" />
+            </ComboBox>
+            <ComboBox x:Name="Hệ_Thống_Copy" HorizontalAlignment="Left" Margin="130,10,0,0" VerticalAlignment="Top" Width="120" Text="Hệ Thống">
+                <ComboBoxItem x:Name="cbSuDungDichVu" MouseLeftButtonUp="SuDungDichVu_Click" Content="Sử dụng dịch vụ" />
+                <ComboBoxItem Content="Đăng xuất" />
+            </ComboBox>
+            <ComboBox x:Name="Hệ_Thống_Copy1" HorizontalAlignment="Left" Margin="250,10,0,0" VerticalAlignment="Top" Width="120" Text="Hệ Thống">
+                <ComboBoxItem Content="Đổi mật khẩu" />
+                <ComboBoxItem Content="Đăng xuất" />
+            </ComboBox>
+            <ComboBox x:Name="Hệ_Thống_Copy2" HorizontalAlignment="Left" Margin="370,10,0,0" VerticalAlignment="Top" Width="120" Text="Hệ Thống">
+                <ComboBoxItem Content="Đổi mật khẩu" />
+                <ComboBoxItem Content="Đăng xuất" />
+            </ComboBox>
+            <ComboBox x:Name="Hệ_Thống_Copy3" HorizontalAlignment="Left" Margin="490,10,0,0" VerticalAlignment="Top" Width="120" Text="Hệ Thống">
+                <ComboBoxItem Content="Đổi mật khẩu" />
+                <ComboBoxItem Content="Đăng xuất" />
+            </ComboBox>
+            <TextBlock Text="Text 1" MouseLeftButtonUp="Text1_Click" Margin="640,13,560,13"/>
+        </Grid>
+        <!-- Main content -->
+        <Frame x:Name="contentFrame" NavigationUIVisibility="Hidden" Margin="0,47,0,10"/>
+
+
+
+
+    </Grid>
+</Window>
